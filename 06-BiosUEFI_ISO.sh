@@ -52,7 +52,7 @@ sudo xorriso \
    -iso-level 3 \
    -full-iso9660-filenames \
    -volid "$NAME" \
-   -output "../$NAME.iso" \
+   -output "../$NAME_$VERSION.iso" \
    -eltorito-boot boot/grub/bios.img \
       -no-emul-boot \
       -boot-load-size 4 \
