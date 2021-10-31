@@ -61,7 +61,28 @@ apt-get install -y --no-install-recommends \
     nano linux-generic && \
 apt-get clean
 
- #Sobrat SSDM s ishodnikov
+
+# kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
+# sudo apt install tasksel
+# sudo tasksel install kubuntu-full 
+# ili 
+# sudo tasksel install kubuntu-desktop
+# 
+
+
+
+#Ubiquity 
+#apt-get install -y \
+#   ubiquity \
+#   ubiquity-casper \
+#   ubiquity-frontend-kde \
+#   ubiquity-slideshow-ubuntu \
+#  ubiquity-ubuntu-artwork
+
+
+
+
+
 
 
 
