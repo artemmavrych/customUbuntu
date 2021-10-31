@@ -15,6 +15,11 @@ dns=dnsmasq
 managed=false
 EOF
 
+rm 03-chroot-settings.sh
+rm 04-chroot-networkClearExit.sh
+rm configuration.txt
+
+
 dpkg-reconfigure network-manager
 
 truncate -s 0 /etc/machine-id
