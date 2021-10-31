@@ -1,7 +1,7 @@
 #!/bin/bash
 source configuration.txt
 
-cd $HOME/ubSBU
+cd $HOME/$WORKSPACE
 
 cat <<EOF > image/README.diskdefines
 #define DISKNAME  Ubuntu from scratch
