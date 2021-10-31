@@ -56,10 +56,14 @@ apt-get install -y \
 apt-get install -y --no-install-recommends \
     xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
-    sddm lxqt lxqt-core \
+    lxqt lxqt-core \
     psmisc nmap less wget git ca-certificates \
     nano linux-generic && \
 apt-get clean
+
+ #Sobrat SSDM s ishodnikov
+
+
 
 useradd -m sbu -s /bin/bash
 
