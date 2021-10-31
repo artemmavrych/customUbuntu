@@ -65,19 +65,19 @@ apt-get clean
 
 
 
-useradd -m sbu -s /bin/bash
+#useradd -m sbu -s /bin/bash
 
 ## NE ZABUD calamares calamares-settings-lubuntu calamares-settings-ubuntu-common ###################
 #echo 'sbu:sbu' | chpasswd
 
-cat <<EOF > /etc/sddm.conf
-[Users]
-MinimumUid=999
-
-[Autologin]
-user=sbu
-Session=lxqt.desktop
-EOF
+#cat <<EOF > /etc/sddm.conf
+#[Users]
+#MinimumUid=999
+#
+#[Autologin]
+#user=sbu
+#Session=lxqt.desktop
+#EOF
 
 
 dpkg-reconfigure locales
