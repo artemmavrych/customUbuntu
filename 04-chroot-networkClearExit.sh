@@ -39,5 +39,5 @@ umount /sys
 umount /dev/pts
 
 export HISTSIZE=0
-
+echo "Type exit after installing all necessary tools (We still need to install Windows Manager(sddm, lightdm or gdm) and installer (calamares or  ubiquity) ."
 exit
