@@ -46,7 +46,7 @@ apt-get install -y \
     grub-pc \
     grub-pc-bin \
     grub2-common \
-    btrfs-progs cracklib-runtime dmeventd dmraid jfsutils klibc-utils \
+    lxqt sddm openbox btrfs-progs cracklib-runtime dmeventd dmraid jfsutils klibc-utils \
     kpartx kpartx-boot libaio1 libboost-python1.71.0 libcrack2 libdevmapper-event1.02.1 libdmraid1.0.0.rc16 libklibc liblvm2cmd2.03 libpwquality-common libpwquality1 \
     libreadline5 memtest86+ libyaml-cpp0.6 lvm2 mokutil reiserfsprogs thin-provisioning-tools wamerican xfsprogs  \
     zram-config lz4 busybox-initramfs cifs-utils cryptsetup cryptsetup-bin cryptsetup-initramfs cryptsetup-run initramfs-tools \
