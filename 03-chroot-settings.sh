@@ -80,6 +80,8 @@ dpkg-reconfigure locales
 
 
 # Mojet rabotat ne pravilno !! RAZBERIS V SDDM!!!
+
+printf "Change root password:\n"
 passwd root
 
 echo "Ustanovit vse 4to nado tut, ne zabit installer i posovetovatsya s Sashey."
