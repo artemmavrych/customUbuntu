@@ -72,6 +72,12 @@ apt-get install -y \
 apt-get clean
 
 apt install kde-plasma-desktop -y
+apt-get remove --auto-remove ubuntu-gnome-desktop -y
+apt-get remove gnome-shell -y
+apt-get purge --auto-remove ubuntu-gnome-desktop -y
+apt-get purge ubuntu-gnome-desktop -y
+apt-get autoremove -y
+sudo apt-get remove gdm -y
 # kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
 #apt install tasksel
 #tasksel install kubuntu-full 
