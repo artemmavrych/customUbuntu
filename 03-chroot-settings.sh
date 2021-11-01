@@ -46,25 +46,33 @@ apt-get install -y \
     grub-pc \
     grub-pc-bin \
     grub2-common \
-    lxqt sddm openbox btrfs-progs cracklib-runtime dmeventd dmraid jfsutils klibc-utils \
-    kpartx kpartx-boot libaio1 libboost-python1.71.0 libcrack2 libdevmapper-event1.02.1 libdmraid1.0.0.rc16 libklibc liblvm2cmd2.03 libpwquality-common libpwquality1 \
-    libreadline5 memtest86+ libyaml-cpp0.6 lvm2 mokutil reiserfsprogs thin-provisioning-tools wamerican xfsprogs  \
-    zram-config lz4 busybox-initramfs cifs-utils cryptsetup cryptsetup-bin cryptsetup-initramfs cryptsetup-run initramfs-tools \
-    initramfs-tools-bin initramfs-tools-core language-pack-en language-pack-en-base libefivar1 linux-base
+    nano \
+    screenfetch \
+    wget \
+    vim \
+    less \
+    git \
+    iputils-ping
+    
+    #lxqt sddm openbox btrfs-progs cracklib-runtime dmeventd dmraid jfsutils klibc-utils \
+    #kpartx kpartx-boot libaio1 libboost-python1.71.0 libcrack2 libdevmapper-event1.02.1 libdmraid1.0.0.rc16 libklibc liblvm2cmd2.03 libpwquality-common libpwquality1 \
+    #libreadline5 memtest86+ libyaml-cpp0.6 lvm2 mokutil reiserfsprogs thin-provisioning-tools wamerican xfsprogs  \
+    #zram-config lz4 busybox-initramfs cifs-utils cryptsetup cryptsetup-bin cryptsetup-initramfs cryptsetup-run initramfs-tools \
+    #initramfs-tools-bin initramfs-tools-core language-pack-en language-pack-en-base libefivar1 linux-base
+    
+    apt-get install -y --no-install-recommends linux-generic
 
+#apt-get install -y --no-install-recommends \
+#    xserver-xorg-core xserver-xorg xinit xterm \
+#    screen lxterminal \
+#    psmisc nmap less  git ca-certificates  && \
 
-apt-get install -y --no-install-recommends \
-    xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim iputils-ping \
-    lxqt lxqt-core \
-    psmisc nmap less wget git ca-certificates \
-    nano linux-generic && \
 apt-get clean
 
-
+apt install kde-plasma-desktop -y
 # kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
-# sudo apt install tasksel
-# sudo tasksel install kubuntu-full 
+#apt install tasksel
+#tasksel install kubuntu-full 
 # ili 
 # sudo tasksel install kubuntu-desktop
 # 
@@ -72,12 +80,12 @@ apt-get clean
 
 
 #Ubiquity 
-#apt-get install -y \
-#   ubiquity \
-#   ubiquity-casper \
-#   ubiquity-frontend-kde \
-#   ubiquity-slideshow-ubuntu \
-#  ubiquity-ubuntu-artwork
+apt-get install -y \
+   ubiquity \
+   ubiquity-casper \
+   ubiquity-frontend-kde \
+   ubiquity-slideshow-ubuntu \
+   ubiquity-ubuntu-artwork
 
 
 
