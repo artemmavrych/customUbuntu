@@ -79,6 +79,9 @@ apt install kde-plasma-desktop -y
 # sudo tasksel install kubuntu-desktop
 # 
 apt install apparmor-utils apparmor-profiles -y
+apt install cups -y
+apt install print-manager -y
+apt install libreoffice-kde5 libreoffice libreoffice-kde libreoffice-base libreoffice-calc libreoffice-dev libreoffice-draw libreoffice-impress
 
 
 #Ubiquity 
