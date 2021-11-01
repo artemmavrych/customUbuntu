@@ -78,7 +78,7 @@ apt install kde-plasma-desktop -y
 # ili 
 # sudo tasksel install kubuntu-desktop
 # 
-
+apt install apparmor-utils apparmor-profiles -y
 
 
 #Ubiquity 
