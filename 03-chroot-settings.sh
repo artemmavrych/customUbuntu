@@ -96,7 +96,6 @@ apt-get install -y \
 
 #useradd -m sbu -s /bin/bash
 
-## NE ZABUD calamares calamares-settings-lubuntu calamares-settings-ubuntu-common ###################
 #echo 'sbu:sbu' | chpasswd
 
 #cat <<EOF > /etc/sddm.conf
