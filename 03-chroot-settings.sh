@@ -52,7 +52,9 @@ apt-get install -y \
     vim \
     less \
     git \
-    iputils-ping
+    iputils-ping \
+    memtest86+
+    
     
     #lxqt sddm openbox btrfs-progs cracklib-runtime dmeventd dmraid jfsutils klibc-utils \
     #kpartx kpartx-boot libaio1 libboost-python1.71.0 libcrack2 libdevmapper-event1.02.1 libdmraid1.0.0.rc16 libklibc liblvm2cmd2.03 libpwquality-common libpwquality1 \
