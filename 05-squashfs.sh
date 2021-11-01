@@ -26,8 +26,17 @@ insmod all_video
 set default="0"
 set timeout=30
 
+#menuentry "Install $NAME" {
+#   linux /casper/vmlinuz boot=casper nopersistent toram quiet splash ---
+#   initrd /casper/initrd
+#}
+#menuentry "Try Ubuntu FS without installing" {
+#   linux /casper/vmlinuz boot=casper nopersistent toram quiet splash ---
+#  initrd /casper/initrd
+#}
+#
 menuentry "Install $NAME" {
-   linux /casper/vmlinuz boot=casper nopersistent toram quiet splash ---
+   linux /casper/vmlinuz boot=casper only-ubiquity quiet splash ---
    initrd /casper/initrd
 }
 
