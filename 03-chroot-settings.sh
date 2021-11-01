@@ -80,7 +80,7 @@ apt install kde-plasma-desktop -y
 # 
 apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
-apt install print-manager -y
+apt install print-manager  gwenview-y
 apt install libreoffice-kde5 libreoffice libreoffice-kde libreoffice-base libreoffice-calc libreoffice-dev libreoffice-draw libreoffice-impress -y
 
 
