@@ -71,7 +71,8 @@ apt-get install -y \
 
 apt-get clean
 
-apt install kde-plasma-desktop -y
+#apt install kde-plasma-desktop -y
+apt install kde-standard -y
 apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
 apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
 apt-get autoremove -y
