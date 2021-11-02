@@ -88,8 +88,10 @@ apt-get autoremove -y
 # 
 apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
-apt install print-manager  gwenview -y
-apt install libreoffice-kde5 libreoffice libreoffice-kde libreoffice-base libreoffice-calc libreoffice-dev libreoffice-draw libreoffice-impress -y
+#Esli stanet kde-standard bez gnome i budet prosmotshik to udalit gwenview
+apt install print-manager gwenview -y
+#Okular - pdf reader
+apt install libreoffice-kde5 okular libreoffice libreoffice-kde libreoffice-base libreoffice-calc libreoffice-dev libreoffice-draw libreoffice-impress -y
 apt-get install plymouth-theme-ubuntu-logo -y
 
 #Ubiquity 
