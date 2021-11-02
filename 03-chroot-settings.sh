@@ -88,14 +88,14 @@ apt install cups -y
 #Esli stanet kde-standard bez gnome i budet prosmotshik to udalit gwenview
 apt install print-manager gwenview -y
 #Okular - pdf reader
-apt install libreoffice-kde5 okular libreoffice libreoffice-kde libreoffice-base libreoffice-calc libreoffice-dev libreoffice-draw libreoffice-impress -y
+apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 apt-get install plymouth-theme-ubuntu-logo -y
 
 #Ubiquity 
 apt-get install -y \
    ubiquity \
    ubiquity-casper \
-   ubiquity-frontend-kde \
+   ubiquity-frontend-gtk \
    ubiquity-slideshow-ubuntu \
    ubiquity-ubuntu-artwork
 
