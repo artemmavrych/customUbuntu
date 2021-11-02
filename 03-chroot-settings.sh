@@ -72,13 +72,10 @@ apt-get install -y \
 apt-get clean
 
 apt install kde-plasma-desktop -y
-apt-get remove --auto-remove ubuntu-gnome-desktop -y
-apt-get remove gnome-shell -y
-apt-get purge --auto-remove ubuntu-gnome-desktop -y
-apt-get purge ubuntu-gnome-desktop -y
+apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
+apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
 apt-get autoremove -y
-apt-get remove gdm -y
-apt-get remove --auto-remove gnome-session-wayland
+
 
 
 
@@ -92,7 +89,7 @@ apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
 apt install print-manager  gwenview-y
 apt install libreoffice-kde5 libreoffice libreoffice-kde libreoffice-base libreoffice-calc libreoffice-dev libreoffice-draw libreoffice-impress -y
-
+apt-get install plymouth-theme-ubuntu-logo -y
 
 #Ubiquity 
 apt-get install -y \
