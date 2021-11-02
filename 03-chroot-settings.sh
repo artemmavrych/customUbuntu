@@ -103,7 +103,10 @@ apt-get install -y \
 
 
 
-
+cat <<EOF > /etc/sddm.conf
+[General]
+InputMethod=
+EOF
 
 
 
