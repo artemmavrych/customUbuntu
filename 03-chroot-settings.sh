@@ -62,23 +62,20 @@ apt-get install -y \
     #zram-config lz4 busybox-initramfs cifs-utils cryptsetup cryptsetup-bin cryptsetup-initramfs cryptsetup-run initramfs-tools \
     #initramfs-tools-bin initramfs-tools-core language-pack-en language-pack-en-base libefivar1 linux-base
     
-    apt-get install -y --no-install-recommends linux-generic
+    apt-get install -y --no-install-recommends linux-generic \
+    lightdm xfce4* && \
+apt-get clean
+apt install xfce4-goodies -y
 
 #apt-get install -y --no-install-recommends \
 #    xserver-xorg-core xserver-xorg xinit xterm \
 #    screen lxterminal \
 #    psmisc nmap less  git ca-certificates  && \
-
-apt-get clean
-
 #apt install kde-plasma-desktop -y
-apt install kde-standard -y
-apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
-apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
-apt-get autoremove -y
-
-
-
+#apt install kde-standard -y
+#apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
+#apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
+#apt-get autoremove -y
 
 # kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
 #apt install tasksel
@@ -105,12 +102,10 @@ apt-get install -y \
 
 
 
-cat <<EOF > /etc/sddm.conf
-[General]
-InputMethod=
-EOF
-
-
+#cat <<EOF > /etc/sddm.conf
+#[General]
+#InputMethod=
+#EOF
 
 #useradd -m sbu -s /bin/bash
 
