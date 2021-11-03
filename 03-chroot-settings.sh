@@ -98,7 +98,7 @@ apt-get clean
 apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
 apt install system-config-printer-gnome -y
-apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
+apt install libreoffice-base libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
 
 printf "Change root password:\n"
