@@ -55,17 +55,8 @@ apt-get install -y \
     iputils-ping \
     memtest86+
     
-    
-    #lxqt sddm openbox btrfs-progs cracklib-runtime dmeventd dmraid jfsutils klibc-utils \
-    #kpartx kpartx-boot libaio1 libboost-python1.71.0 libcrack2 libdevmapper-event1.02.1 libdmraid1.0.0.rc16 libklibc liblvm2cmd2.03 libpwquality-common libpwquality1 \
-    #libreadline5 memtest86+ libyaml-cpp0.6 lvm2 mokutil reiserfsprogs thin-provisioning-tools wamerican xfsprogs  \
-    #zram-config lz4 busybox-initramfs cifs-utils cryptsetup cryptsetup-bin cryptsetup-initramfs cryptsetup-run initramfs-tools \
-    #initramfs-tools-bin initramfs-tools-core language-pack-en language-pack-en-base libefivar1 linux-base
-    
     apt-get install -y --no-install-recommends linux-generic 
-#    lightdm xfce4* && \
 
-#Ubiquity 
 apt-get install -y \
    ubiquity \
    ubiquity-casper \
@@ -74,19 +65,11 @@ apt-get install -y \
    ubiquity-ubuntu-artwork
 
 
-#Eto rabotaet i ustanavlivaet gnome ubuntovskiy
-#apt-get install -y \
-#    plymouth-theme-ubuntu-logo \
-#    ubuntu-gnome-desktop \
-#    ubuntu-gnome-wallpapers
-    
-    # ili  eto :
-    
+
 apt-get install -y \
     gnome-session gnome-shell gnome-themes-standard \
     gnome-terminal gnome-control-center nautilus \
     gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo 
-    
     
     
 apt-get purge -y \
@@ -103,49 +86,9 @@ dpkg-reconfigure locales
 apt-get clean
 apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
-#Esli stanet kde-standard bez gnome i budet prosmotshik to udalit gwenview
-#apt install print-manager gwenview -y
 apt install system-config-printer-gnome gwenview -y
-#Okular - pdf reader
 apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
-
-
-#apt install xfce4-goodies -y
-#apt-get install -y --no-install-recommends \
-#    xserver-xorg-core xserver-xorg xinit xterm \
-#    screen lxterminal \
-#    psmisc nmap less  git ca-certificates  && \
-#apt install kde-plasma-desktop -y
-#apt install kde-standard -y
-#apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
-#apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
-#apt-get autoremove -y
-# kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
-#apt install tasksel
-#tasksel install kubuntu-full 
-# ili 
-# sudo tasksel install kubuntu-desktop
-# 
-#cat <<EOF > /etc/sddm.conf
-#[General]
-#InputMethod=
-#EOF
-#useradd -m sbu -s /bin/bash
-#echo 'sbu:sbu' | chpasswd
-#cat <<EOF > /etc/sddm.conf
-#[Users]
-#MinimumUid=999
-#
-#[Autologin]
-#user=sbu
-#Session=lxqt.desktop
-#EOF
-
-
-
-
-# Mojet rabotat ne pravilno !! RAZBERIS V SDDM!!!
 
 printf "Change root password:\n"
 passwd root
