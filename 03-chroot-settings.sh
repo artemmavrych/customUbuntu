@@ -52,10 +52,9 @@ apt-get install -y \
     wget \
     vim \
     less \
-    git 
-    
-  #  iputils-ping \
-  #  memtest86+
+    git \  
+    iputils-ping \
+    memtest86+
     
     apt-get install -y --no-install-recommends linux-generic 
 
