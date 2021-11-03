@@ -73,10 +73,21 @@ apt-get install -y \
    ubiquity-slideshow-ubuntu \
    ubiquity-ubuntu-artwork
 
+
+#Eto rabotaet i ustanavlivaet gnome ubuntovskiy
+#apt-get install -y \
+#    plymouth-theme-ubuntu-logo \
+#    ubuntu-gnome-desktop \
+#    ubuntu-gnome-wallpapers
+    
+    # ili  eto :
+    
 apt-get install -y \
-    plymouth-theme-ubuntu-logo \
-    ubuntu-gnome-desktop \
-    ubuntu-gnome-wallpapers
+    gnome-session gnome-shell gnome-themes-standard \
+    gnome-terminal gnome-control-center nautilus \
+    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo 
+    
+    
     
 apt-get purge -y \
     transmission-gtk \
