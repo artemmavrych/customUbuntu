@@ -17,7 +17,8 @@ deb http://ua.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe 
 deb-src http://ua.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
 EOF
 
-apt-get update && \
+apt-get update
+
 apt-get install -y libterm-readline-gnu-perl systemd-sysv
 
 
@@ -52,11 +53,13 @@ apt-get install -y \
     wget \
     vim \
     less \
-    git \  
+    git \
     iputils-ping \
     memtest86+
-    
-    apt-get install -y --no-install-recommends linux-generic 
+
+
+apt-get install -y --no-install-recommends linux-generic
+
 
 apt-get install -y \
    ubiquity \
@@ -70,7 +73,7 @@ apt-get install -y \
 apt-get install -y \
     gnome-session gnome-shell gnome-themes-standard \
     gnome-terminal gnome-control-center nautilus \
-    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs mutter gnome-backgrounds gnome-applets 
+    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs mutter gnome-backgrounds gnome-applets
    
     
     
@@ -84,8 +87,12 @@ apt-get purge -y \
     hitori
 
 apt-get autoremove -y
+
+
 dpkg-reconfigure locales
+
 apt-get clean
+
 #apt install apparmor-utils apparmor-profiles -y
 #apt install cups -y
 #apt install system-config-printer-gnome gwenview -y
