@@ -70,7 +70,8 @@ apt-get install -y \
 apt-get install -y \
     gnome-session gnome-shell gnome-themes-standard \
     gnome-terminal gnome-control-center nautilus \
-    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo 
+    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs mutter gnome-backgrounds gnome-applets 
+   
     
     
 apt-get purge -y \
