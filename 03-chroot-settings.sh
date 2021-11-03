@@ -71,11 +71,13 @@ apt-get install -y \
 
 
 apt-get install -y \
-    gnome-session gnome-shell gnome-themes-standard \
+    gnome-session-flashback gnome-shell gnome-themes-standard \
     gnome-terminal gnome-control-center nautilus \
-    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs mutter gnome-backgrounds gnome-applets
-   
+    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs gnome-backgrounds gnome-applets
     
+ # gnome-session ubral dlya testa   
+ #gnome-session-flashback интересный
+ #gnome-core доп инструменты гнома (календари , калькуляторы)
     
 apt-get purge -y \
     transmission-gtk \
@@ -93,10 +95,10 @@ dpkg-reconfigure locales
 
 apt-get clean
 
-#apt install apparmor-utils apparmor-profiles -y
-#apt install cups -y
-#apt install system-config-printer-gnome gwenview -y
-#apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
+apt install apparmor-utils apparmor-profiles -y
+apt install cups -y
+apt install system-config-printer-gnome -y
+apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
 
 printf "Change root password:\n"
