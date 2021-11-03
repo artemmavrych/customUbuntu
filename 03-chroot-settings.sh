@@ -62,10 +62,10 @@ apt-get install -y \
     #zram-config lz4 busybox-initramfs cifs-utils cryptsetup cryptsetup-bin cryptsetup-initramfs cryptsetup-run initramfs-tools \
     #initramfs-tools-bin initramfs-tools-core language-pack-en language-pack-en-base libefivar1 linux-base
     
-    apt-get install -y --no-install-recommends linux-generic \
-    lightdm xfce4* && \
+    apt-get install -y --no-install-recommends linux-generic 
+#    lightdm xfce4* && \
 apt-get clean
-apt install xfce4-goodies -y
+#apt install xfce4-goodies -y
 
 #apt-get install -y --no-install-recommends \
 #    xserver-xorg-core xserver-xorg xinit xterm \
@@ -99,6 +99,10 @@ apt-get install -y \
    ubiquity-slideshow-ubuntu \
    ubiquity-ubuntu-artwork
 
+apt-get install -y \
+plymouth-theme-ubuntu-logo \
+ubuntu-gnome-desktop \
+ubuntu-gnome-wallpapers
 
 
 
