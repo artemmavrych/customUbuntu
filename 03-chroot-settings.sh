@@ -26,7 +26,8 @@ ln -fs /etc/machine-id /var/lib/dbus/machine-id
 dpkg-divert --local --rename --add /sbin/initctl
 ln -s /bin/true /sbin/initctl
 
-apt-get -y upgrade && \
+apt-get -y upgrade
+
 apt-get install -y \
     sudo \
     ubuntu-standard \
@@ -51,9 +52,10 @@ apt-get install -y \
     wget \
     vim \
     less \
-    git \
-    iputils-ping \
-    memtest86+
+    git 
+    
+  #  iputils-ping \
+  #  memtest86+
     
     apt-get install -y --no-install-recommends linux-generic 
 
@@ -84,10 +86,10 @@ apt-get purge -y \
 apt-get autoremove -y
 dpkg-reconfigure locales
 apt-get clean
-apt install apparmor-utils apparmor-profiles -y
-apt install cups -y
-apt install system-config-printer-gnome gwenview -y
-apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
+#apt install apparmor-utils apparmor-profiles -y
+#apt install cups -y
+#apt install system-config-printer-gnome gwenview -y
+#apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
 
 printf "Change root password:\n"
