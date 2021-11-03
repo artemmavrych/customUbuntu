@@ -104,7 +104,8 @@ apt-get clean
 apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
 #Esli stanet kde-standard bez gnome i budet prosmotshik to udalit gwenview
-apt install print-manager gwenview -y
+#apt install print-manager gwenview -y
+apt install system-config-printer-gnome gwenview -y
 #Okular - pdf reader
 apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
