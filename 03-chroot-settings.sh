@@ -64,32 +64,6 @@ apt-get install -y \
     
     apt-get install -y --no-install-recommends linux-generic 
 #    lightdm xfce4* && \
-apt-get clean
-#apt install xfce4-goodies -y
-
-#apt-get install -y --no-install-recommends \
-#    xserver-xorg-core xserver-xorg xinit xterm \
-#    screen lxterminal \
-#    psmisc nmap less  git ca-certificates  && \
-#apt install kde-plasma-desktop -y
-#apt install kde-standard -y
-#apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
-#apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
-#apt-get autoremove -y
-
-# kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
-#apt install tasksel
-#tasksel install kubuntu-full 
-# ili 
-# sudo tasksel install kubuntu-desktop
-# 
-apt install apparmor-utils apparmor-profiles -y
-apt install cups -y
-#Esli stanet kde-standard bez gnome i budet prosmotshik to udalit gwenview
-apt install print-manager gwenview -y
-#Okular - pdf reader
-apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
-apt-get install plymouth-theme-ubuntu-logo -y
 
 #Ubiquity 
 apt-get install -y \
@@ -100,21 +74,53 @@ apt-get install -y \
    ubiquity-ubuntu-artwork
 
 apt-get install -y \
-plymouth-theme-ubuntu-logo \
-ubuntu-gnome-desktop \
-ubuntu-gnome-wallpapers
+    plymouth-theme-ubuntu-logo \
+    ubuntu-gnome-desktop \
+    ubuntu-gnome-wallpapers
+    
+apt-get purge -y \
+    transmission-gtk \
+    transmission-common \
+    gnome-mahjongg \
+    gnome-mines \
+    gnome-sudoku \
+    aisleriot \
+    hitori
+
+apt-get autoremove -y
+dpkg-reconfigure locales
+apt-get clean
+apt install apparmor-utils apparmor-profiles -y
+apt install cups -y
+#Esli stanet kde-standard bez gnome i budet prosmotshik to udalit gwenview
+apt install print-manager gwenview -y
+#Okular - pdf reader
+apt install libreoffice-base okular libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
 
 
+#apt install xfce4-goodies -y
+#apt-get install -y --no-install-recommends \
+#    xserver-xorg-core xserver-xorg xinit xterm \
+#    screen lxterminal \
+#    psmisc nmap less  git ca-certificates  && \
+#apt install kde-plasma-desktop -y
+#apt install kde-standard -y
+#apt-get remove --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
+#apt-get purge --auto-remove language-selector-gnome gnome-user-docs gnome-settings-daemon-common gnome-settings-daemon gnome-online-accounts gdm3 gnome-session-wayland ubuntu-gnome-desktop gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-keyring gnome-keyring-pkcs11:amd64 -y
+#apt-get autoremove -y
+# kde-full(kde-plasma-desktop or kde-standard)  i blackbox instead of openbox lxqt and lxqt-core sddm
+#apt install tasksel
+#tasksel install kubuntu-full 
+# ili 
+# sudo tasksel install kubuntu-desktop
+# 
 #cat <<EOF > /etc/sddm.conf
 #[General]
 #InputMethod=
 #EOF
-
 #useradd -m sbu -s /bin/bash
-
 #echo 'sbu:sbu' | chpasswd
-
 #cat <<EOF > /etc/sddm.conf
 #[Users]
 #MinimumUid=999
@@ -125,7 +131,6 @@ ubuntu-gnome-wallpapers
 #EOF
 
 
-dpkg-reconfigure locales
 
 
 # Mojet rabotat ne pravilno !! RAZBERIS V SDDM!!!
