@@ -5,11 +5,11 @@ wget https://raw.githubusercontent.com/artemmavrych/customUbuntu/main/03-chroot-
 wget https://raw.githubusercontent.com/artemmavrych/customUbuntu/main/04-chroot-networkClearExit.sh
 wget https://raw.githubusercontent.com/artemmavrych/customUbuntu/main/05-squashfs.sh
 wget https://raw.githubusercontent.com/artemmavrych/customUbuntu/main/06-BiosUEFI_ISO.sh
-wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu(16).png
-wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu(22).png
-wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu(24).png
-wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu(32).png
-wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu(48).png
+wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(16\).png
+wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(22\).png
+wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(24\).png
+wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(32\).png
+wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(48\).png
 wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.png
 wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.jpg
 wget https://github.com/artemmavrych/customUbuntu/raw/main/theme.tar.gz
