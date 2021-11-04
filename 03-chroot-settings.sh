@@ -69,7 +69,8 @@ apt-get install -y --no-install-recommends linux-generic
 #apt --no-install-recommends install kwin-x11 kwin-style-breeze kwin-addons systemsettings -y
 
 
-
+#XFCE
+apt install xfce4 lightdm xorg -y
 
 #Podhodid dlya gnome i dlya xfce
 apt-get install -y \
@@ -81,14 +82,15 @@ apt-get install -y \
 
 
 #Gnome OK
-apt-get install -y \
-    gnome-session-flashback gnome-shell gnome-themes-standard \
-    gnome-terminal gnome-control-center nautilus \
-    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs gnome-backgrounds gnome-applets
-    
- # gnome-session ubral dlya testa   
- #gnome-session-flashback интересный
- #gnome-core доп инструменты гнома (календари , калькуляторы)
+#apt-get install -y \
+#    gnome-session-flashback gnome-shell gnome-themes-standard \
+#    gnome-terminal gnome-control-center nautilus \
+#    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs gnome-backgrounds gnome-applets
+#    
+# gnome-session ubral dlya testa   
+#gnome-session-flashback интересный
+#gnome-core доп инструменты гнома (календари , калькуляторы)
+
     
 apt-get purge -y \
     transmission-gtk \
@@ -98,7 +100,7 @@ apt-get purge -y \
     gnome-sudoku \
     aisleriot \
     hitori
-
+apt-get remove --purge gnome*
 apt-get autoremove -y
 
 
@@ -106,11 +108,16 @@ dpkg-reconfigure locales
 
 apt-get clean
 
-apt install apparmor-utils apparmor-profiles -y
-apt install cups -y
-apt install system-config-printer-gnome -y
-apt install libreoffice-base libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
+#apt install apparmor-utils apparmor-profiles -y
+#apt install cups -y
+#apt install system-config-printer-gnome -y
+#apt install libreoffice-base libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
+#Untested
+#apt-get remove --purge gnome*
+
+#Remove gnome
+apt remove nautilus gnome-power-manager gnome-screensaver gnome-termina* gnome-pane* gnome-applet* gnome-bluetooth gnome-desktop* gnome-sessio* gnome-user* gnome-shell-common compiz compiz* unity unity* hud zeitgeist zeitgeist* python-zeitgeist libzeitgeist* activity-log-manager-common gnome-control-center gnome-screenshot overlay-scrollba* && sudo apt-get install xubuntu-community-wallpapers && sudo apt-get autoremove
 
 printf "Change root password:\n"
 passwd root
