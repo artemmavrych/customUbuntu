@@ -130,7 +130,7 @@ rm -rf /usr/share/themes/Default
 cp -ra theme /usr/share/themes/Greybird
 cp -ra theme /usr/share/themes/Defaultd
 chmod 777 /usr/share/themes/Greybird
-chmod 777 /usr/share/themes/Defaultd
+chmod 777 /usr/share/themes/Default
 
 
 #apt install apparmor-utils apparmor-profiles -y
