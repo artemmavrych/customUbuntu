@@ -103,12 +103,12 @@ chmod 777 /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo16.png
 update-initramfs -u
 
 #Start icon
-cp xfce4-panel-menu(16).png /usr/share/icons/hicolor/16x16/apps/xfce4-panel-menu.png
-cp xfce4-panel-menu(22).png /usr/share/icons/hicolor/22x22/apps/xfce4-panel-menu.png
-cp xfce4-panel-menu(24).png /usr/share/icons/hicolor/24x24/apps/xfce4-panel-menu.png
-cp xfce4-panel-menu(32).png /usr/share/icons/hicolor/32x32/apps/xfce4-panel-menu.png
-cp xfce4-panel-menu(48).png /usr/share/icons/hicolor/48x48/apps/xfce4-panel-menu.png
-cp xfce4-panel-menu(48).png /usr/share/icons/elementary-xfce/apps/48/xfce4-panel-menu.png
+cp xfce4-panel-menu\(16\).png /usr/share/icons/hicolor/16x16/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu\(22\).png /usr/share/icons/hicolor/22x22/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu\(24\).png /usr/share/icons/hicolor/24x24/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu\(32\).png /usr/share/icons/hicolor/32x32/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu\(48\).png /usr/share/icons/hicolor/48x48/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu\(48\).png /usr/share/icons/elementary-xfce/apps/48/xfce4-panel-menu.png
 chmod 777 /usr/share/icons/hicolor/16x16/apps/xfce4-panel-menu.png
 chmod 777 /usr/share/icons/hicolor/22x22/apps/xfce4-panel-menu.png
 chmod 777 /usr/share/icons/hicolor/24x24/apps/xfce4-panel-menu.png
