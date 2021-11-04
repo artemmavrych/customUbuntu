@@ -61,14 +61,6 @@ apt-get install -y \
 apt-get install -y --no-install-recommends linux-generic
 
 
-#LXQT Testing
-#apt-get install -y \
-#   xorg \
-#   lxqt \
-#   sddm 
-#apt --no-install-recommends install kwin-x11 kwin-style-breeze kwin-addons systemsettings -y
-
-
 #XFCE
 apt install xorg lightdm liblightdm-gobject-1-0 lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfwm4 firefox -y
 apt-get install thunar-archive-plugin plymouth-theme-ubuntu-logo -y
@@ -81,16 +73,6 @@ apt-get install -y \
    ubiquity-slideshow-ubuntu \
    ubiquity-ubuntu-artwork
 
-
-#Gnome OK
-#apt-get install -y \
-#    gnome-session-flashback gnome-shell gnome-themes-standard \
-#    gnome-terminal gnome-control-center nautilus \
-#    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs gnome-backgrounds gnome-applets
-#    
-# gnome-session ubral dlya testa   
-#gnome-session-flashback интересный
-#gnome-core доп инструменты гнома (календари , калькуляторы)
 
     
 apt-get purge -y \
@@ -108,6 +90,48 @@ apt-get autoremove -y
 dpkg-reconfigure locales
 
 apt-get clean
+
+#Splash image
+cp 200.png /usr/share/plymouth/ubuntu-logo.png
+cp 200.png /usr/share/plymouth/themes/spinner/watermark.png
+cp 200.png /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png
+cp 200.png /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo16.png
+chmod 777 /usr/share/plymouth/ubuntu-logo.png
+chmod 777 /usr/share/plymouth/themes/spinner/watermark.png
+chmod 777 /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png
+chmod 777 /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo16.png
+update-initramfs -u
+
+#Start icon
+cp xfce4-panel-menu(16).png /usr/share/icons/hicolor/16x16/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu(22).png /usr/share/icons/hicolor/22x22/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu(24).png /usr/share/icons/hicolor/24x24/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu(32).png /usr/share/icons/hicolor/32x32/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu(48).png /usr/share/icons/hicolor/48x48/apps/xfce4-panel-menu.png
+cp xfce4-panel-menu(48).png /usr/share/icons/elementary-xfce/apps/48/xfce4-panel-menu.png
+chmod 777 /usr/share/icons/hicolor/16x16/apps/xfce4-panel-menu.png
+chmod 777 /usr/share/icons/hicolor/22x22/apps/xfce4-panel-menu.png
+chmod 777 /usr/share/icons/hicolor/24x24/apps/xfce4-panel-menu.png
+chmod 777 /usr/share/icons/hicolor/32x32/apps/xfce4-panel-menu.png
+chmod 777 /usr/share/icons/hicolor/48x48/apps/xfce4-panel-menu.png
+chmod 777 /usr/share/icons/elementary-xfce/apps/48/xfce4-panel-menu.png
+
+#Wallpaper
+cp wallpaper.png /usr/share/backgrounds/xfce/xfce-stipes.png
+cp wallpaper.jpg /usr/share/backgrounds/xfce/xfce-blue.jpg
+cp wallpaper.jpg /usr/share/backgrounds/xfce/xfce-teal.jpg
+chmod 777 /usr/share/backgrounds/xfce/xfce-stipes.png
+chmod 777 /usr/share/backgrounds/xfce/xfce-blue.jpg
+chmod 777 /usr/share/backgrounds/xfce/xfce-teal.jpg
+
+#Themes
+rm -rf /usr/share/themes/Greybird
+rm -rf /usr/share/themes/Default
+cp -ra theme /usr/share/themes/Greybird
+cp -ra theme /usr/share/themes/Defaultd
+chmod 777 /usr/share/themes/Greybird
+chmod 777 /usr/share/themes/Defaultd
+
 
 #apt install apparmor-utils apparmor-profiles -y
 #apt install cups -y
