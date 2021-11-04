@@ -14,6 +14,8 @@ wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.png
 wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.jpg
 wget https://github.com/artemmavrych/customUbuntu/raw/main/theme.tar.gz
 wget https://github.com/artemmavrych/customUbuntu/raw/main/200.png
+tar -xvf theme.tar.gz
+rm -rf theme.tar.gz
 
 chmod 755 *.sh
 chmod 755 *.png
