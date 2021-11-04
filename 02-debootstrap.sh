@@ -11,6 +11,17 @@ sudo debootstrap \
 sudo cp ./03-chroot-settings.sh $HOME/$WORKSPACE/chroot
 sudo cp ./04-chroot-networkClearExit.sh $HOME/$WORKSPACE/chroot
 sudo cp ./configuration.txt $HOME/$WORKSPACE/chroot
+sudo cp ./200.png $HOME/$WORKSPACE/chroot
+sudo cp ./wallpaper.png $HOME/$WORKSPACE/chroot
+sudo cp ./wallpaper.jpg $HOME/$WORKSPACE/chroot
+sudo cp ./xfce4-panel-menu(16).png $HOME/$WORKSPACE/chroot
+sudo cp ./xfce4-panel-menu(22).png $HOME/$WORKSPACE/chroot
+sudo cp ./xfce4-panel-menu(24).png $HOME/$WORKSPACE/chroot
+sudo cp ./xfce4-panel-menu(32).png $HOME/$WORKSPACE/chroot
+sudo cp ./xfce4-panel-menu(48).png $HOME/$WORKSPACE/chroot
+sudo cp ./theme $HOME/$WORKSPACE/chroot/
+
+
 sudo mount --bind /dev $HOME/$WORKSPACE/chroot/dev
 sudo mount --bind /run $HOME/$WORKSPACE/chroot/run
 sudo chroot $HOME/$WORKSPACE/chroot
