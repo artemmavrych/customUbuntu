@@ -62,10 +62,10 @@ apt-get install -y --no-install-recommends linux-generic
 
 
 #LXQT Testing
-apt-get install -y \
-   xorg \
-   lxqt \
-   sddm 
+#apt-get install -y \
+#   xorg \
+#   lxqt \
+#   sddm 
 
 apt --no-install-recommends install kwin-x11 kwin-style-breeze kwin-addons systemsettings -y
 
@@ -82,10 +82,10 @@ apt-get install -y \
 
 
 #Gnome OK
-#apt-get install -y \
-#    gnome-session-flashback gnome-shell gnome-themes-standard \
-#    gnome-terminal gnome-control-center nautilus \
-#    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs gnome-backgrounds gnome-applets
+apt-get install -y \
+    gnome-session-flashback gnome-shell gnome-themes-standard \
+    gnome-terminal gnome-control-center nautilus \
+    gnome-icon-theme gdm3 plymouth-theme-ubuntu-logo gjs gnome-backgrounds gnome-applets
     
  # gnome-session ubral dlya testa   
  #gnome-session-flashback интересный
