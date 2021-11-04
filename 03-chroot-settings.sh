@@ -70,7 +70,7 @@ apt-get install -y --no-install-recommends linux-generic
 
 
 #XFCE
-apt install xfce4 lightdm xorg -y
+apt install xfce4 lightdm xorg xfwm4 -y
 
 #Podhodid dlya gnome i dlya xfce
 apt-get install -y \
