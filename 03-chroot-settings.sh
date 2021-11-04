@@ -71,7 +71,7 @@ apt-get install -y --no-install-recommends linux-generic
 
 
 
-
+#Podhodid dlya gnome i dlya xfce
 apt-get install -y \
    ubiquity \
    ubiquity-casper \
