@@ -21,11 +21,11 @@ rm configuration.txt
 rm -rf 200.png
 rm -rf wallpaper.png
 rm -rf wallpaper.jpg
-rm -rf xfce4-panel-menu(16).png
-rm -rf xfce4-panel-menu(22).png
-rm -rf xfce4-panel-menu(24).png
-rm -rf xfce4-panel-menu(32).png
-rm -rf xfce4-panel-menu(48).png
+rm -rf xfce4-panel-menu\(16\).png
+rm -rf xfce4-panel-menu\(22\).png
+rm -rf xfce4-panel-menu\(24\).png
+rm -rf xfce4-panel-menu\(32\).png
+rm -rf xfce4-panel-menu\(48\).png
 rm -rf theme
 
 dpkg-reconfigure network-manager
