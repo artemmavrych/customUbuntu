@@ -16,8 +16,8 @@ wget https://github.com/artemmavrych/customUbuntu/raw/main/theme.tar.gz
 wget https://github.com/artemmavrych/customUbuntu/raw/main/200.png
 tar -xvf theme.tar.gz
 rm -rf theme.tar.gz
+mv Prof--XFCE-\ 2.1/ theme
 
 chmod 755 *.sh
 chmod 755 *.png
 chmod 755 *.jpg
-chmod 755 *.tar.gz
