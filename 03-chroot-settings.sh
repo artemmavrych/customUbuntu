@@ -70,7 +70,7 @@ apt-get install -y --no-install-recommends linux-generic
 
 
 #XFCE
-apt install xfce4 lightdm xorg xfwm4 -y
+apt install xorg lightdm liblightdm-gobject-1-0 lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfwm4 -y
 
 #Podhodid dlya gnome i dlya xfce
 apt-get install -y \
