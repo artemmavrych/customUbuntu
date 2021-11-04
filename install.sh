@@ -21,3 +21,4 @@ mv Prof--XFCE-\ 2.1/ theme
 chmod 755 *.sh
 chmod 755 *.png
 chmod 755 *.jpg
+chmod 755 *
