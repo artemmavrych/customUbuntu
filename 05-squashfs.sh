@@ -46,8 +46,6 @@ cd $HOME/$WORKSPACE
 sudo chroot chroot dpkg-query -W --showformat='${Package} ${Version}\n' | sudo tee image/casper/filesystem.manifest
 sudo cp -v image/casper/filesystem.manifest image/casper/filesystem.manifest-desktop
 sudo sed -i '/ubiquity/d' image/casper/filesystem.manifest-desktop
-#sudo sed -i '/gnome/d' image/casper/filesystem.manifest-desktop PROVERIT
-#sudo sed -i '/gdm/d' image/casper/filesystem.manifest-desktop PROVERIT
 sudo sed -i '/casper/d' image/casper/filesystem.manifest-desktop
 sudo sed -i '/discover/d' image/casper/filesystem.manifest-desktop
 sudo sed -i '/laptop-detect/d' image/casper/filesystem.manifest-desktop
