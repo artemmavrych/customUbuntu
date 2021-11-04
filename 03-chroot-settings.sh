@@ -128,7 +128,7 @@ chmod 777 /usr/share/backgrounds/xfce/xfce-teal.jpg
 rm -rf /usr/share/themes/Greybird
 rm -rf /usr/share/themes/Default
 cp -ra theme /usr/share/themes/Greybird
-cp -ra theme /usr/share/themes/Defaultd
+cp -ra theme /usr/share/themes/Default
 chmod 777 /usr/share/themes/Greybird
 chmod 777 /usr/share/themes/Default
 
