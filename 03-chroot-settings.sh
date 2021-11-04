@@ -66,8 +66,7 @@ apt-get install -y --no-install-recommends linux-generic
 #   xorg \
 #   lxqt \
 #   sddm 
-
-apt --no-install-recommends install kwin-x11 kwin-style-breeze kwin-addons systemsettings -y
+#apt --no-install-recommends install kwin-x11 kwin-style-breeze kwin-addons systemsettings -y
 
 
 
