@@ -120,7 +120,7 @@ chmod 777 /usr/share/icons/elementary-xfce/apps/48/xfce4-panel-menu.png
 cp wallpaper.png /usr/share/backgrounds/xfce/xfce-stipes.png
 cp wallpaper.jpg /usr/share/backgrounds/xfce/xfce-blue.jpg
 cp wallpaper.jpg /usr/share/backgrounds/xfce/xfce-teal.jpg
-chmod 777 /usr/share/backgrounds/xfce/xfce-stipes.png
+chmod 777 /usr/share/backgrounds/xfce/xfce-stripes.png
 chmod 777 /usr/share/backgrounds/xfce/xfce-blue.jpg
 chmod 777 /usr/share/backgrounds/xfce/xfce-teal.jpg
 
