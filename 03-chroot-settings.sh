@@ -148,6 +148,8 @@ greeter-hide-users=true
 EOF
 
 cat <<EOF > /etc/lightdm/lightdm-gtk-greeter.conf
+default-user-image=/usr/share/icons/hicolor/48x48/apps/xfce4-panel
+
 [greeter]
 background=/usr/share/backgrounds/xfce/xfce-stripes.png
 EOF
