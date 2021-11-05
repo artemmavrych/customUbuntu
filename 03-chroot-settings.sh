@@ -141,6 +141,15 @@ cp -ra theme /usr/share/themes/Default
 chmod 777 /usr/share/themes/Greybird
 chmod 777 /usr/share/themes/Default
 
+cat <<EOF > /etc/lightdm/lightdm.conf
+[SeatDefaults]
+greeter-hide-users=true
+EOF
+
+cat <<EOF > /etc/lightdm/lightdm-gtk-greeter.conf
+[greeter]
+background=/usr/share/backgrounds/xfce/xfce-stripes.png
+EOF
 
 #apt install apparmor-utils apparmor-profiles -y
 #apt install cups -y
