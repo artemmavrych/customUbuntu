@@ -20,7 +20,7 @@ sudo cp ./xfce4-panel-menu\(24\).png $HOME/$WORKSPACE/chroot
 sudo cp ./xfce4-panel-menu\(32\).png $HOME/$WORKSPACE/chroot
 sudo cp ./xfce4-panel-menu\(48\).png $HOME/$WORKSPACE/chroot
 sudo cp -r ./theme $HOME/$WORKSPACE/chroot/
-
+sudo cp -r ./.config $HOME/$WORKSPACE/chroot/etc/skel/
 
 sudo mount --bind /dev $HOME/$WORKSPACE/chroot/dev
 sudo mount --bind /run $HOME/$WORKSPACE/chroot/run
