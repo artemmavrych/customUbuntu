@@ -162,6 +162,7 @@ EOF
 
 #Remove gnome
 apt remove nautilus gnome-power-manager gnome-screensaver gnome-termina* gnome-pane* gnome-applet* gnome-bluetooth gnome-desktop* gnome-sessio* gnome-user* gnome-shell-common compiz compiz* unity unity* hud zeitgeist zeitgeist* libzeitgeist* activity-log-manager-common gnome-control-center gnome-screenshot overlay-scrollba* && sudo apt-get install xubuntu-community-wallpapers && sudo apt-get autoremove
+apt-get install network-manager network-manager-gnome network-manager-pptp network-manager-pptp-gnome xfce4-statusnotifier-plugin -y
 
 printf "Change root password:\n"
 passwd root
