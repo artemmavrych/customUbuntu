@@ -65,7 +65,7 @@ apt-get install -y --no-install-recommends linux-generic
 apt install xorg lightdm liblightdm-gobject-1-0 lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfwm4 firefox -y
 apt-get install thunar-archive-plugin plymouth-theme-ubuntu-logo -y
 
-#Podhodid dlya gnome i dlya xfce
+#UBIQUITY:Podhodid dlya gnome i dlya xfce
 apt-get install -y \
    ubiquity \
    ubiquity-casper \
@@ -73,7 +73,16 @@ apt-get install -y \
    ubiquity-slideshow-ubuntu \
    ubiquity-ubuntu-artwork
 
+#Ubiquity config:##########################################################################
+cat <<EOF > /languagelist.data
+0:en:English:English
+2:uk:Ukrainian:Українська
+EOF
 
+gzip /languagelist.data
+rm -rf /usr/lib/ubiquity/localechooser/languagelist.data.gz
+mv /languagelist.data.gz /usr/lib/ubiquity/localechooser/languagelist.data.gz
+#############################################################################################
     
 apt-get purge -y \
     transmission-gtk \
