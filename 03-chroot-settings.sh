@@ -64,6 +64,7 @@ apt-get install -y --no-install-recommends linux-generic
 #XFCE
 apt install xorg lightdm liblightdm-gobject-1-0 lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfwm4 firefox -y
 apt-get install thunar-archive-plugin plymouth-theme-ubuntu-logo -y
+apt-get install xfce4-goodies -y
 
 #UBIQUITY:Podhodid dlya gnome i dlya xfce
 apt-get install -y \
