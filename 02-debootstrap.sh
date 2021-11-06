@@ -14,6 +14,7 @@ sudo cp ./configuration.txt $HOME/$WORKSPACE/chroot
 sudo cp ./200.png $HOME/$WORKSPACE/chroot
 sudo cp ./wallpaper.png $HOME/$WORKSPACE/chroot
 sudo cp ./wallpaper.jpg $HOME/$WORKSPACE/chroot
+sudo cp ./200.png $HOME/$WORKSPACE/chroot
 sudo cp ./xfce4-panel-menu\(16\).png $HOME/$WORKSPACE/chroot
 sudo cp ./xfce4-panel-menu\(22\).png $HOME/$WORKSPACE/chroot
 sudo cp ./xfce4-panel-menu\(24\).png $HOME/$WORKSPACE/chroot
