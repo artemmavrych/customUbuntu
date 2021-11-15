@@ -46,13 +46,13 @@ MENU COLOR msg07        37;40   #90ffffff #a0000000 std
 MENU COLOR tabmsg       31;40   #30ffffff #00000000 std
 
 LABEL linux
- MENU LABEL Try Ubuntu FS
+ MENU LABEL Try SBUbuntu
  MENU DEFAULT
  KERNEL /casper/vmlinuz
  APPEND initrd=/casper/initrd boot=casper
 
 LABEL linux
- MENU LABEL Try Ubuntu FS (nomodeset)
+ MENU LABEL Try SBUbuntu (nomodeset)
  MENU DEFAULT
  KERNEL /casper/vmlinuz
  APPEND initrd=/casper/initrd boot=casper nomodeset
