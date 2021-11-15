@@ -28,7 +28,7 @@ EOF
 #cd $HOME/$WORKSPACE/image
 
 
-cat <<EOF> isolinux/isolinux.cfg
+cat <<EOF> image/isolinux/isolinux.cfg
 UI vesamenu.c32
 
 MENU TITLE Boot Menu
