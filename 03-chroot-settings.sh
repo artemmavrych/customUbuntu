@@ -153,10 +153,10 @@ background=/usr/share/backgrounds/xfce/xfce-stripes.png
 default-user-image=/usr/share/plymouth/ubuntu-logo.png
 EOF
 
-#apt install apparmor-utils apparmor-profiles -y
-#apt install cups -y
-#apt install system-config-printer-gnome -y
-#apt install libreoffice-base libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
+apt install apparmor-utils apparmor-profiles -y
+apt install cups -y
+apt install system-config-printer-gnome -y
+apt install libreoffice-base libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
 
 #Untested
 #apt-get remove --purge gnome*
