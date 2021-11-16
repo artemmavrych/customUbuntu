@@ -59,7 +59,7 @@ apt-get install -y \
 
 
 apt-get install -y --no-install-recommends linux-generic
-apt-get install -y grub-efi-ia32
+#apt-get install -y grub-efi-ia32
 apt-get install -y grub-efi-amd64
 
 #XFCE
