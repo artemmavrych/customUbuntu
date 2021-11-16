@@ -65,10 +65,12 @@ sudo xorriso \
       -no-emul-boot \
    -append_partition 2 0xef isolinux/efiboot.img \
    -output "$HOME/$WORKSPACE/"$NAME"_"$VERSION".iso" \
+   -m "isolinux/efiboot.img" \
+   -m "isolinux/bios.img" \
    -graft-points \
       "$HOME/$WORKSPACE/image" \
       "/EFI/efiboot.img=isolinux/efiboot.img" \
-      "/boot/grub/bios.img=isolinux/bios.img" 
-      
+      "/boot/grub/bios.img=isolinux/bios.img" \
+      "."
 
 ls -lh $HOME/$WORKSPACE/*.iso
