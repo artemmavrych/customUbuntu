@@ -158,6 +158,117 @@ apt install apparmor-utils apparmor-profiles -y
 apt install cups -y
 apt install system-config-printer-gnome -y
 apt install libreoffice-base libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer -y
+apt-get install -y \
+ubuntu-restricted-extras \
+hunspell-ru \
+hunspell-uk \
+ttf-mscorefonts-installer \
+hyphen-en-us \
+hyphen-ru \
+hyphen-uk \
+unrar-free \
+uudeview \
+vlan \
+vlc \
+inkscape \
+vdpauinfo \
+wavpack \
+wbritish \
+wukrainian \
+laptop-mode-tools \
+fonts-wqy-microhei \
+fonts-wqy-zenhei \
+g++ \
+gcc \
+gdebi-core \
+gimp \
+gimp-help-ru \
+gimp-data-extras \
+gimp-help-en \
+printer-driver-all \
+printer-driver-all-enforce \
+printer-driver-cups-pdf \
+printer-driver-oki \
+pinta \
+proxychains4 \
+acpi \
+acpitool \
+libosmesa6 \
+libpam-modules \
+libpam-encfs \
+arj \
+autopoint \
+bleachbit \
+bluetooth \
+xfonts-75dpi \
+xfonts-100dpi \
+libatomic1 \
+libc6-dbg \
+browser-plugin-freshplayer-pepperflash \
+cpu-x \
+cryptmount \
+dash \
+dh-modaliases \
+rar \
+libreoffice-avmedia-backend-gstreamer \
+libreoffice-help-ru \
+libreoffice-help-en-us \
+libreoffice-l10n-uk \
+libreoffice-librelogo \
+libreoffice-lightproof-en \
+libreoffice-lightproof-ru-ru \
+libreoffice-sdbc-hsqldb \
+libreoffice-style-galaxy \
+libreoffice-systray \
+libreoffice-templates \
+libc6-i386 \
+libd3dadapter9-mesa-dev \
+libdbusmenu-gtk4 \
+linux-libc-dev \
+ecryptfs-utils \
+lshw-gtk \
+fatattr \
+ffmpeg \
+mc \
+mdadm \
+findutils \
+mesa-utils-extra \
+mesa-utils \
+mesa-va-drivers \
+mesa-vdpau-drivers \
+mpack \
+mpeg3-utils \
+musepack-tools \
+mythes-ru \
+mythes-en-us \
+mythes-uk \
+libido3-0.1-0 \
+shim-signed \
+smbclient \
+sqlite3 \
+stacer \
+syslinux-utils \
+testdisk \
+thunderbird \
+thunderbird-locale-en-us \
+thunderbird-locale-ru \
+thunderbird-locale-uk \
+timeshift \
+ttf-ubuntu-font-family \
+gstreamer1.0-plugins-bad \
+gufw \
+hp-ppd \
+hpijs-ppds \
+node-normalize.css \
+ocl-icd-libopencl1 \
+openvpn \
+p7zip-full \
+p7zip-rar \
+pepperflashplugin-nonfree \
+perl-openssl-defaults \
+fonts-ubuntu-title \
+fonts-ubuntu-font-family-console
+
 
 #Untested
 #apt-get remove --purge gnome*
@@ -169,4 +280,4 @@ apt-get install network-manager network-manager-gnome network-manager-pptp netwo
 printf "Change root password:\n"
 passwd root
 
-echo "Ustanovit vse 4to nado tut, ne zabit installer i posovetovatsya s Sashey."
+echo "Pomenyat installer"
