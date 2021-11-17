@@ -63,7 +63,8 @@ apt-get install -y --no-install-recommends linux-generic
 apt-get install -y grub-efi-amd64
 
 #XFCE
-apt install xorg lightdm liblightdm-gobject-1-0 lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfwm4 firefox -y
+apt install xorg lightdm liblightdm-gobject-1-0 lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfwm4 -y
+#Vishe bil firefox
 apt-get install thunar-archive-plugin plymouth-theme-ubuntu-logo -y
 apt-get install xfce4-goodies -y
 
@@ -269,6 +270,10 @@ perl-openssl-defaults \
 fonts-ubuntu-title \
 fonts-ubuntu-font-family-console
 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+apt-get update
+apt-get install google-chrome-stable
 
 #Untested
 #apt-get remove --purge gnome*
