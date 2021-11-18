@@ -275,6 +275,10 @@ echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources
 apt-get update
 apt-get install google-chrome-stable
 
+apt install software-properties-common alsa-utils ubuntu-drivers-common -y
+add-apt-repository ppa:graphics-drivers
+add-apt-repository ppa:oibaf/graphics-drivers
+
 #Untested
 #apt-get remove --purge gnome*
 
