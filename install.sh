@@ -12,13 +12,16 @@ wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(32\
 wget https://github.com/artemmavrych/customUbuntu/raw/main/xfce4-panel-menu\(48\).png
 wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.png
 wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.jpg
-#wget https://github.com/artemmavrych/customUbuntu/raw/main/theme.tar.gz
 wget https://github.com/artemmavrych/customUbuntu/raw/main/themeWinLike.zip
+wget https://github.com/artemmavrych/customUbuntu/raw/main/WinIcons.zip
 wget https://github.com/artemmavrych/customUbuntu/raw/main/config.tar.gz
 wget https://github.com/artemmavrych/customUbuntu/raw/main/200.png
+unzip WinIcons.zip
 unzip themeWinLike.zip
+rm -rf WinIcons.zip
 rm -rf themeWinLike.zip
 mv Windows-10-Dark-master theme
+mv WinIcons icons
 
 tar -xvf config.tar.gz
 rm -rf config.tar.gz
