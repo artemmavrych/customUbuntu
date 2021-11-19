@@ -144,6 +144,16 @@ cp -ra theme /usr/share/themes/Default
 chmod 777 /usr/share/themes/Greybird
 chmod 777 /usr/share/themes/Default
 
+#Icons
+rm -rf /usr/share/icons/elementary-xfce-dark
+rm -rf /usr/share/icons/default
+cp -ra icons /usr/share/icons/elementary-xfce-dark
+cp -ra icons /usr/share/icons/default
+chmod 755 /usr/share/icons/elementary-xfce-dark
+chmod 755 /usr/share/icons/default
+
+
+
 cat <<EOF > /etc/lightdm/lightdm.conf
 [SeatDefaults]
 greeter-hide-users=true
