@@ -157,6 +157,8 @@ chmod 755 /usr/share/icons/default
 cat <<EOF > /etc/lightdm/lightdm.conf
 [SeatDefaults]
 greeter-hide-users=true
+greeter-show-manual-login=true
+allow-guest=false
 EOF
 
 cat <<EOF > /etc/lightdm/lightdm-gtk-greeter.conf
