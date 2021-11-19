@@ -16,11 +16,8 @@ wget https://github.com/artemmavrych/customUbuntu/raw/main/wallpaper.jpg
 wget https://github.com/artemmavrych/customUbuntu/raw/main/themeWinLike.zip
 wget https://github.com/artemmavrych/customUbuntu/raw/main/config.tar.gz
 wget https://github.com/artemmavrych/customUbuntu/raw/main/200.png
-#tar -xvf theme.tar.gz
 unzip themeWinLike.zip
-#rm -rf theme.tar.gz
 rm -rf themeWinLike.zip
-#mv Prof--XFCE-\ 2.1/ theme
 mv Windows-10-Dark-master theme
 
 tar -xvf config.tar.gz
