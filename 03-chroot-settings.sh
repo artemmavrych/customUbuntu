@@ -268,7 +268,9 @@ p7zip-rar \
 pepperflashplugin-nonfree \
 perl-openssl-defaults \
 fonts-ubuntu-title \
-fonts-ubuntu-font-family-console
+fonts-ubuntu-font-family-console \
+okular
+
 
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
@@ -286,6 +288,13 @@ add-apt-repository ppa:oibaf/graphics-drivers
 apt remove nautilus gnome-power-manager gnome-screensaver gnome-termina* gnome-pane* gnome-applet* gnome-bluetooth gnome-desktop* gnome-sessio* gnome-user* gnome-shell-common compiz compiz* unity unity* hud zeitgeist zeitgeist* libzeitgeist* activity-log-manager-common gnome-control-center gnome-screenshot overlay-scrollba* && sudo apt-get install xubuntu-community-wallpapers && sudo apt-get autoremove
 apt-get install network-manager network-manager-gnome network-manager-pptp network-manager-pptp-gnome xfce4-statusnotifier-plugin -y
 
+#########User manage###
+apt-get install gnome-system-tools
+cat <<EOF >> /usr/share/applications/users.desktop
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+EOF
+
+########################
 printf "Change root password:\n"
 passwd root
 
